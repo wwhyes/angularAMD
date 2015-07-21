@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title> model </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" charset="utf-8" href="css/fonts.min.css"></link>
+	</head>
+
+	<body>
+		<div style="text-align:center;margin-top:55%;" ng-show="loading">
+			<i class="icon-spinner icon-spin icon-4x" ></i>
+		</div>
+		<div ng-view id='ng-view' ng-show="!loading"></div>	
+		
+
+		<script src='lib/jquery-1.10.2.min.js'></script>	 
+		<script src='lib/angular.min.js'></script>												
+		<script data-main='js/main.js' src='lib/require-2.1.14.min.js'></script>		
+		
+	</body>
+	
+</html>
